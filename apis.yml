@@ -1,23 +1,71 @@
 aid: assiduusglobal
+
 name: Assiduusglobal
-description: 'Assiduusglobal is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.assiduusglobal.com/wp-content/uploads/2025/03/Logo-Horizontal.png
+
+description: 'Assiduusglobal, operating as Assiduus Global, provides a cross‑border e‑commerce acceleration platform that unifies supply‑chain, marketplace, and brand‑protection services. Leveraging AI‑driven consumer insights, the company offers tools such as Brand Central, Ship With Assiduus, and Aacarto to help brands expand globally across 20+ countries, accelerate marketplace listings, and gain real‑time analytics. The platform serves Fortune 500 clients and aims to simplify international growth through data‑rich middleware.'
+
 url: https://raw.githubusercontent.com/api-evangelist/assiduusglobal/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- ECommerce
+- AI
+- SupplyChain
+- Marketplace
+- BrandProtection
+- GlobalExpansion
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/assiduusglobal-llms.txt
+- type: Hosts
+  url: hosts/assiduusglobal-hosts.yml
+- type: TermsOfService
+  url: https://www.assiduusglobal.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://www.assiduusglobal.com/privacy-policy/
+- type: Pricing
+  url: https://www.assiduusglobal.com/pricing-for-international-markets-key-considerations-for-emerging-vs-developed-economies/
+- type: Newsroom
+  url: https://www.assiduusglobal.com/news/
+- type: DomainSecurity
+  url: security/assiduusglobal-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/assiduusglobal
+  url: https://www.assiduusglobal.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine-readable contract found at the API host.
+  evidence:
+    - url: https://api.assiduusglobal.com/openapi.json
+      status: 000
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
